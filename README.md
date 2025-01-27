@@ -1,70 +1,159 @@
-# sre-project-rlee
-SRE's best practices for GitHub 
+# SRE Project - RLee
 
-# Roberto Lee's SRE Project
-This project demonstrates best practices for managing GitHub repositories, with a focus on Site Reliability Engineering workflows.
+## Overview
 
-
-## Getting Started
-To get this project up and running on your local machine, follow these steps:
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/RLEE117/sre-project-rlee.git
-   cd sre-project-rlee
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-
-## Usage Examples
-To use the model trainer:
-```python
-import model
-data = load_data("path/to/data")
-model.train(data)
-```
+This repository showcases Site Reliability Engineering (SRE) principles through practical implementation and automation. The project focuses on building scalable, reliable, and observable systems, while emphasizing best practices for infrastructure and operations.
 
 ## Features
-- Implements GitHub best practices for repository management.
-- Includes a basic python calculator functionality.
-- Supports automated testing with GitHub Actions.
 
+- **Automation:** Automates repetitive tasks to improve operational efficiency.
+- **Monitoring & Observability:** Integrates with monitoring tools to ensure system reliability and performance.
+- **Scalability:** Implements configurations to support growth and adaptability.
+- **Error Handling:** Includes mechanisms to handle failures gracefully and maintain service uptime.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+- Python 3.8 or higher
+- A virtual environment tool (`venv` or `virtualenv`)
+- Dependencies listed in `requirements.txt`
+
+### Steps
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/<your-username>/sre-project-rlee.git
+   cd sre-project-rlee
+   ```
+
+2. **Set Up a Virtual Environment:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up Environment Variables:**
+   - Copy the `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Update `.env` with your configuration (e.g., API keys).
+
+---
+
+## Usage
+
+Run the main application:
+```bash
+python src/main.py
+```
+
+### Available Commands
+| Command           | Description                                |
+|-------------------|--------------------------------------------|
+| `python src/main.py` | Starts the application.                   |
+| `python tests/run_tests.py` | Runs the test suite for the project. |
+
+---
+
+## Testing
+
+1. **Run Unit Tests:**
+   ```bash
+   python -m unittest discover tests/
+   ```
+2. **Run All Tests with Coverage:**
+   ```bash
+   pytest --cov=src
+   ```
+
+---
 
 ## Contributing
-1. Fork the repo.
-2. Create a new feature branch: `git checkout -b feature/add-new-feature`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push the branch: `git push origin feature/add-new-feature`
-5. Create a pull request.
 
+We welcome contributions to this project! To contribute:
 
-```markdown
-## License 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. **Fork the Repository:** Click the "Fork" button in the top-right corner of the repository page.
+2. **Clone Your Fork:**
+   ```bash
+   git clone https://github.com/<your-username>/sre-project-rlee.git
+   cd sre-project-rlee
+   ```
+3. **Create a Feature Branch:**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+4. **Commit Your Changes:**
+   ```bash
+   git add .
+   git commit -m "Add a brief description of your changes"
+   ```
+5. **Push Your Branch:**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Submit a Pull Request:** Go to your forked repository, click "Compare & pull request," and describe your changes.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
+
+---
+
+## Contact
+
+For questions or feedback, please open an issue in the repository or contact [repository owner](https://github.com/RLEE117).
+
 ```
 
-Add: Initial project setup with calculator functionality for basic arithmetic operations
-Update: Enhance output formatting in calculator to display result units (e.g., "kg", "m")
+---
 
+### **LICENSE**
 
+```plaintext
+MIT License
 
-## Workflow
-**Check status:**
-```
-git status
-```
-**Add changes:**
-``` 
-git add .
+Copyright (c) 2025 RLee
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
-**Commit changes:**
-```
-git commit -m "Add: Implement input  to handle non-numeric input errors"
-```
-
-**Push changes to remote repository:**
-```
-git push origin <feature/calc-enhancements> 
-```
+---
