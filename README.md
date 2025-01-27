@@ -15,7 +15,7 @@ To get this project up and running on your local machine, follow these steps:
 
 2. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r packages.txt
 
 ## Usage Examples
 To use the model trainer:
