@@ -1,23 +1,34 @@
 # sre-project-rlee
 SRE's best practices for GitHub 
 
-## Title:
-Roberto Lee's SRE Project.
+# Roberto Lee's SRE Project
+This project demonstrates best practices for managing GitHub repositories, with a focus on Site Reliability Engineering workflows.
 
-## Description:
-Best practices for creating and managing GitHub repositories.
 
 ## Getting Started
+To get this project up and running on your local machine, follow these steps:
+
 1. Clone the repo:
-```
-git clone https://github.com/<RLEE117>/<sre-project-rlee>.git
-```
+   ```bash
+   git clone https://github.com/RLEE117/sre-project-rlee.git
+   cd sre-project-rlee
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage Examples
-```
+To use the model trainer:
+```python
 import model
+data = load_data("path/to/data")
 model.train(data)
 ```
+
+## Features
+- Implements GitHub best practices for repository management.
+- Includes a basic python calculator functionality.
+- Supports automated testing with GitHub Actions.
 
 
 ## Contributing
@@ -33,8 +44,9 @@ model.train(data)
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-Add: Initial project setup with basic calculator functions.
-Update: Enhance output formatting with result units.
+Add: Initial project setup with calculator functionality for basic arithmetic operations
+Update: Enhance output formatting in calculator to display result units (e.g., "kg", "m")
+
 
 
 ## Workflow
